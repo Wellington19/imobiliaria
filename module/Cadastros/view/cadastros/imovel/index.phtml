@@ -4,20 +4,22 @@
  * @var $this Laminas\View\Renderer\PhpRenderer
  */
 ?>
-<h1>Cadastro de Corretores</h1>
+<h1>Cadastro de Imóveis</h1>
 <p><a href="<?= $this->url('cadastros', [
-              'controller' => 'corretor',
+              'controller' => 'imovel',
               'action' => 'editar'
-            ]) ?>">Novo corretor</a></p>
+            ]) ?>">Novo imóvel</a></p>
 <table>
   <thead>
     <tr>
       <th>Matrícula</th>
-      <th>Nome</th>
+      <th>Descrição</th>
+      <th>Endereço</th>
+      <th>Valor</th>
     </tr>
   </thead>
   <tbody>
-    <?= $this->partialLoop('corretores.phtml', $this->corretores) ?>
+    <?= $this->partialLoop('imoveis.phtml', $this->imoveis) ?>
   </tbody>
 </table>
 <a href="<?= $this->url('cadastros') ?>">Voltar</a>

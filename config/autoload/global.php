@@ -15,18 +15,18 @@ use Laminas\Db\Adapter\AdapterServiceFactory;
  */
 
 return [
-    // ...
-    'db' => [
-        'driver'   => 'Pdo_Mysql',
-        'database' => 'imobiliaria',
-        'username' => 'root' 
-    ],
-    'service_manager' => [
-        'factories' => [
-            'DbAdapter' => AdapterServiceFactory::class
-        ]
+  // ...
+  'db' => [
+    'driver'   => 'Pdo_Mysql',
+    'database' => 'imobiliaria',
+    'username' => 'root'
+  ],
+  'service_manager' => [
+    'factories' => [
+      'DbAdapter' => AdapterServiceFactory::class
     ]
-    
-    
-    
+  ]
+
+
+
 ];

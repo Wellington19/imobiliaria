@@ -9,7 +9,7 @@ use Laminas\View\View;
 <tr>
   <td>
     <a href="<?= $this->url('cadastros', [
-                'controller' => 'corretor',
+                'controller' => 'imovel',
                 'action' => 'editar',
                 'matricula' => $this->matricula
               ]) ?>">
@@ -17,11 +17,17 @@ use Laminas\View\View;
     </a>
   </td>
   <td>
-    <?= $this->nome ?>
+    <?= $this->descricao ?>
+  </td>
+  <td>
+    <?= $this->endereco ?>
+  </td>
+  <td>
+    <?= $this->valor ?>
   </td>
   <td>
     <a href="<?= $this->url('cadastros', [
-                'controller' => 'corretor',
+                'controller' => 'imovel',
                 'action'    => 'apagar',
                 'matricula' => $this->matricula
               ]) ?>">X

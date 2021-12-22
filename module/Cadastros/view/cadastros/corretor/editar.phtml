@@ -1,4 +1,5 @@
 <?php
+
 use Laminas\View\View;
 
 /**
@@ -6,16 +7,16 @@ use Laminas\View\View;
  */
 ?>
 <h1>Incluir Corretor</h1>
-<form method="post" action="<?=$this->url('cadastros',[
-'controller' => 'corretor',
-'action' => 'gravar'    
-])?>">
-Nome: <input type="text" name="nome" autofocus="autofocus" value="<?=$this->corretor->nome?>">
-<input type="hidden" name="matricula" value="<?=$this->corretor->matricula?>">
-<input type="submit" value="gravar">
+<form method="post" action="<?= $this->url('cadastros', [
+                              'controller' => 'corretor',
+                              'action' => 'gravar'
+                            ]) ?>">
+  Nome: <input type="text" name="nome" autofocus="autofocus" value="<?= $this->corretor->nome ?>">
+  <input type="hidden" name="matricula" value="<?= $this->corretor->matricula ?>">
+  <input type="submit" value="gravar">
 </form>
-<span><?=$this->messages?></span>
+<span><?= $this->messages ?></span>
 
-<a href="<?=$this->url('cadastros',[
-'controller' => 'corretor'    
-])?>">Voltar</a>
+<a href="<?= $this->url('cadastros', [
+            'controller' => 'corretor'
+          ]) ?>">Voltar</a>
